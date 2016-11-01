@@ -1,6 +1,3 @@
----
----
-
 # Toolbox #
 
 A little compendium of tools, references and resources for web development in a mostly windows environment
