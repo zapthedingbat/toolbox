@@ -102,12 +102,11 @@ KeeAgent is a plugin for KeePass that acts a pagent alternative for putty/plink
 - Install [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 - Use `puttygen` to create SSH key pairs and save them securly somewhere.
 - Add your private keys to your KeePass database (and, optionally, delete them off the file system).
-- Modify your Posh-Git profile at `%USERPROFILE%\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1`
-  - Comment out `#Start-SshAgent -Quiet`
-  - Add the following lines after
+- Modify your profile ($profile)
+  - Add the following lines to set the GIT_SSH environment var to plink
     ```
     # Use KeeAgent
-    $env:GIT_SSH = Join-Path ${env:PROGRAMFILES(x86)} -ChildPath "PuTTY\plink.exe"
+    $env:GIT_SSH = "plink"
     ```
 
 When you next use git to interact with your remote git the key should be provided by KeePass (which will need to be running)
