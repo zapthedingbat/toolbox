@@ -52,6 +52,8 @@ These are windows, or cross platform tools
     Media player.
 - [SysInternals Handle.exe](https://technet.microsoft.com/en-us/sysinternals/bb896655.aspx)
     Displays information about open handles.
+- [Terraform](https://www.terraform.io/downloads.html)
+    Infrastructure as code.
 
 ## PowerShell ##
 - [PsGet](http://psget.net/)
